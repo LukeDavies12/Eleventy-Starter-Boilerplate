@@ -17,6 +17,8 @@ module.exports = function (eleventyConfig) {
     },
   });
 
+  eleventyConfig.addPassthroughCopy('./src/js');
+
   eleventyConfig.setEjsOptions({
     rmWhitespace: true,
     context: {

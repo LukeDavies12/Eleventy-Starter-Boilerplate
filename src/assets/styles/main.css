@@ -1,16 +1,12 @@
 @tailwind base;
 
-a {
-  @apply text-blue-700;
-}
-
-a:hover {
-  @apply underline;
-}
-
 @tailwind components;
 
 @tailwind utilities;
+
+h1, h2, h3, h4, h5, h6, p, button, div {
+  @apply font-sans;
+}
 
 .content {
   @apply tracking-wider leading-8 text-xl;
@@ -73,7 +69,7 @@ a:hover {
 }
 
 .content table {
-  @apply whitespace-no-wrap my-8 border-collapse block overflow-auto;
+  @apply whitespace-nowrap my-8 border-collapse block overflow-auto;
 }
 
 .content th,

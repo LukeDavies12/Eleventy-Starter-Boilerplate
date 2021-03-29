@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <title><%= title %></title>
     <meta
       name="description"
@@ -62,10 +63,53 @@
     <% } %>
   </head>
 
-  <body class="antialiased w-full text-gray-700">
-    asdf
-
+  <body class="antialiased max-w-full bg-beige">
+    <nav class="container px-4 mx-auto flex justify-between py-6">
+      <div class="nav-l">
+        <a href="/">
+          <div class="flex">
+            <img src="../assets/images/lpslogo.png" alt="LPS Logo Image"> <span class=" font-bold text-black ml-2 self-center">LPS Pavement <br>
+              Company</span>
+          </div>
+        </a>
+      </div>
+      <div class="nav-r-mob self-center font-semibold">
+        <span id="menu-not" onclick="openClicked()">menu</span>
+        <span id="menu-yup" class="hidden" onclick="closeClicked()">close</span>
+      </div>
+      <div class="nav-r-up hidden">
+        up
+      </div>
+    </nav>
+    <div id="menu" class="absolute top-0 left-0 w-full hidden mt-28">
+      <div class="container mx-auto px-4">
+        <div class="menu bg-white px-4 py-8 flex flex-col">
+          <a href="/about/" class=" text-gray-800 mt-5 text-2xl font-medium">About</a>
+            <a href="/services/" class=" text-gray-800 mt-5 text-2xl font-medium">Applications & Specifications</a>
+            <a href="/gallery/" class=" text-gray-800 mt-5 text-2xl font-medium">Project Gallery</a>
+            <a href="/testimonials/" class=" text-gray-800 mt-5 text-2xl font-medium">Testimonials</a>
+            <a href="/contact/" class=" text-gray-800 mt-5 text-2xl font-medium">Contact</a>
+        </div>
+      </div>
+    </div>
       <div class="text-xl py-5"><%- content %></div>
 
+      <div class="container mx-auto px-4">
+        <div class=" h-1 bg-white opacity-50 mt-32 mb-16"></div>
+
+        <footer class=" mb-16">
+          <div class="left text-gray-600">
+            © 2021 LPS Pavement Company
+          </div>
+          <div class="right mt-5 flex flex-col">
+            <a href="/" class=" text-gray-800 mt-4">Home</a>
+            <a href="/about/" class=" text-gray-800 mt-4">About</a>
+            <a href="/services/" class=" text-gray-800 mt-4">Applications & Specifications</a>
+            <a href="/gallery/" class=" text-gray-800 mt-4">Project Gallery</a>
+            <a href="/testimonials/" class=" text-gray-800 mt-4">Testimonials</a>
+            <a href="/contact/" class=" text-gray-800 mt-4">Contact</a>
+          </div>
+        </footer>
+      </div>
   </body>
 </html>
