@@ -73,12 +73,16 @@
           </div>
         </a>
       </div>
-      <div class="nav-r-mob self-center font-semibold">
+      <div class="nav-r-mob self-center font-semibold lg:hidden">
         <span id="menu-not" onclick="openClicked()" class=" cursor-pointer">menu</span>
         <span id="menu-yup" class="hidden cursor-pointer" onclick="closeClicked()">close</span>
       </div>
-      <div class="nav-r-up hidden">
-        up
+      <div class="nav-r-up hidden lg:flex lg:items-center">
+        <a href="/about/" class=" text-gray-800 ml-5 font-medium">About</a>
+        <a href="/services/" class=" text-gray-800 ml-5 font-medium">Applications & Specifications</a>
+            <a href="/gallery/" class=" text-gray-800 ml-5 font-medium">Project Gallery</a>
+            <a href="/testimonials/" class=" text-gray-800 ml-5 font-medium">Testimonials</a>
+            <a href="/contact/" class=" text-gray-800 ml-5 font-medium">Contact</a>
       </div>
     </nav>
     <div id="menu" class="absolute top-0 left-0 w-full hidden mt-28">
